@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/khair/IdeaProjects/CampusCoffeeProject">
+        <classes>
+            <class name="testClasses.HomeTest">
+                <methods>
+                    <include name="confirmUrl"/>
+                    <include name="displayLogoOfCampusCoffee"/>
+                    <include name="mouseAction"/>
+                    <include name="scrollDownPage"/>
+                    <include name="screenshotTestCase"/>
+                    <include name="sendTextTestCase"/>
+                </methods>
+            </class>
+            <class name="testClasses.LoginTest">
+                <methods>
+                    <include name="verifyLoginWithValidUsernameAndPassword"/>
+                    <include name="verifyLoginWithInvalidUsernameAndValidPassword"/>
+                    <include name="verifyLoginWithValidUsernameAndInvalidPassword"/>
+                    <include name="verifyLoginWithInvalidUsernameAndInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="testClasses.MyAccountTest">
+                <methods>
+                    <include name="successfullyLogout"/>
+                    <include name="selectCheckBoxBillingAddress"/>
+                    <include name="checkBoxSelected"/>
+                    <include name="enabledMethod"/>
+                </methods>
+            </class>
+            <class name="testClasses.RegisterTest">
+                <methods>
+                    <include name="verifyRegisterWithoutEmailAndPassword"/>
+                    <include name="verifyRegisterEmailAndPassword"/>
+                </methods>
+            </class>
+            <class name="testClasses.ShopCoffeeTest">
+                <methods>
+                    <include name="shopCoffeeOnCart"/>
+                    <include name="checkIncrementSign"/>
+                    <include name="checkDecrementSign"/>
+                    <include name="sendTextOnCouponTextBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

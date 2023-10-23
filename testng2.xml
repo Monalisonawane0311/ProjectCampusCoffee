@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="testClasses.ITestListenerClass"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/khair/IdeaProjects/CampusCoffeeProject">
+
+        <classes>
+            <class name="testClasses.HomeTest">
+                <methods>
+                    <include name="confirmUrl"/>
+
+                </methods>
+            </class>
+ok
+        </classes>
+    </test>
+</suite>
